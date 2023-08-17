@@ -138,4 +138,44 @@ def play_game(computer_board,player_board):
 
     print("After this round, the scores are:")
     print(f"{player_board.name}: {scores['player1']}. {computer_board.name}: {scores['computer']}")
+
+
+    def new_game():
+    """
+    Start a new game. Sets the board size and number of ships, rests the scores and initialises the boards.
+    """
+    size = 5
+    num_ships = 4
+    scores["computer"]=0
+    scores["player1"]=0
+    print("-"*35)
+    print("Welcome to BATTLESHIP!!!")
+    print(f"Board Size: {size}, Number of ships:{num_ships}")
+    print("Top left corner is row: 0, col:0 ")
+    print("-"*35)
+    player_name=input("Please enter your name: \n")
+    print("-"*35)
+
+    computer_board=Board(size,num_ships,"computer",type="computer")
+    player_board=Board(size,num_ships,player_name,type="player1")
+    
+# This is where the alternation is taking place
+
+    for _ in range(num_ships):
+      populate_board(player_board)
+      populate_board(computer_board)
+      
+      
+    play_game(computer_board,player_board)
+
+
+    
+
+
+
+
+new_game()
+
+
+
  
