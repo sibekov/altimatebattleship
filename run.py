@@ -39,3 +39,46 @@ class Board:
         if self.type=="player1":
           self.board[x][y]="@"
 
+
+def random_point(size):
+  """
+  Helper funtion to return a random integer between 0 and size
+  """
+  return randint(0,size-1)
+
+def valid_coordinates(x,y,board):
+  """
+  validate that the cordinates inputs that validates that not yet guessed.
+  Validate that they are not outside our board.
+  """
+  listvar=[0,1,2,3,4]
+
+  try:
+    if x not in listvar:
+      raise ValueError(f"Sorry you entered invalid input {x}!")
+
+  except ValueError as e:
+        print(f"Invalid guess:{e},please try numbers any of the following numbers 0,1,2,3,4")
+        return False
+
+  try:
+    if y not in listvar:
+      raise ValueError(f"Sorry you entered invalid input {y}!")
+
+  except ValueError as e:
+        print(f"Invalid guess:{e},please try numbers any of the following numbers 0,1,2,3,4")
+        return False
+
+
+
+  try:
+    if((x,y) in board.guesses):
+      raise ValueError(
+          f"Sorry you have already guessed {(x,y)}!"
+      )
+  except ValueError as e:
+        print(f"Invalid guess:{e},please try again.\n")
+        return False
+
+  return True
+
