@@ -8,6 +8,7 @@ class Board:
   Has methods for adding ships and guesses and printing the board.
   """
 
+
   def __init__(self,size,num_ships,name,type):
     self.size=size
     self.board=[["." for x in range(size)] for y in range(size)]
@@ -133,11 +134,15 @@ def play_game(computer_board,player_board):
     results=make_guess(computer_board)
     print(f"{player_board.name} guessed: {computer_board.guesses[-1]}")
     print(f"{player_board.name} {results}ed!!!")
+    if results=="Hit":
+        scores["player1"]=scores["player1"]+1
+
 
     answer=make_guess(player_board)
     print(f"{computer_board.name} guessed: {player_board.guesses[-1]}")
     print(f"{computer_board.name} {answer}ed!!!")
-      
+    if answer=="Hit":
+        scores["computer"]=scores["computer"]+1
   
     print(18*"--")
     print("After this round, the scores are:")
