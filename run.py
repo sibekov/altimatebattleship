@@ -132,11 +132,11 @@ def play_game(computer_board,player_board):
 
     results=make_guess(computer_board)
     print(f"{player_board.name} guessed: {computer_board.guesses[-1]}")
-    print(f"{player_board.name} : {results}")
+    print(f"{player_board.name} {results}ed!!!")
 
     answer=make_guess(player_board)
     print(f"{computer_board.name} guessed: {player_board.guesses[-1]}")
-    print(f"{computer_board.name} : {answer}")
+    print(f"{computer_board.name} {answer}ed!!!")
       
   
     print(18*"--")
