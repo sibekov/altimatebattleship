@@ -41,11 +41,13 @@ class Board:
           self.board[x][y]="@"
 
 
+
 def random_point(size):
   """
   Helper funtion to return a random integer between 0 and size
   """
   return randint(0,size-1)
+
 
 def valid_coordinates(x,y,board):
   """
@@ -53,7 +55,7 @@ def valid_coordinates(x,y,board):
   Validate that they are not outside our board.
   """
   listvar=[0,1,2,3,4]
-
+  
   try:
     if x not in listvar:
       raise ValueError(f"Sorry you entered invalid input {x}!")
@@ -67,11 +69,8 @@ def valid_coordinates(x,y,board):
       raise ValueError(f"Sorry you entered invalid input {y}!")
 
   except ValueError as e:
-        print(f"Invalid guess:{e},please try numbers any of the following numbers 0,1,2,3,4")
+        print(f"Invalid guess:{e},please try one of the following numbers 0,1,2,3,4")
         return False
-
-
-
   try:
     if((x,y) in board.guesses):
       raise ValueError(
@@ -80,6 +79,15 @@ def valid_coordinates(x,y,board):
   except ValueError as e:
         print(f"Invalid guess:{e},please try again.\n")
         return False
+
+  try:
+    if type(x) is str:
+        raise ValueError(
+          f"Sorry you have supplied a string {x}!")
+  except ValueError as e:
+        print(f"Invalid guess:{e},please try one of the following numbers 0,1,2,3,4\n")
+        return False
+
 
   return True
 
@@ -101,10 +109,11 @@ def make_guess(board):
   if it is a player guess then it promts the input.
   """
   
-  if  board.type=="computer":
+  if board.type=="computer":
       while True:
-        x=int(input("Please enter row :"))
+        x=int(input("Please enter column :"))
         y=int(input("Please enter column :"))
+    
         if(valid_coordinates(x,y,board)):
          # print("Data is valid!")
           break
