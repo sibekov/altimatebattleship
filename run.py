@@ -69,7 +69,7 @@ def valid_coordinates(x,y,board):
       raise ValueError(f"Sorry you entered invalid input {y}!")
 
   except ValueError as e:
-        print(f"Invalid guess:{e},please try one of the following numbers 0,1,2,3,4")
+        print(f"Invalid guess:{e},please try one of the following numbers 0,1,2,3,4\n")
         return False
   try:
     if((x,y) in board.guesses):
@@ -111,8 +111,8 @@ def make_guess(board):
   
   if board.type=="computer":
       while True:
-        x=int(input("Please enter column :"))
-        y=int(input("Please enter column :"))
+        x=int(input("Please enter column :\n"))
+        y=int(input("Please enter column :\n"))
     
         if(valid_coordinates(x,y,board)):
          # print("Data is valid!")
