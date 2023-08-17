@@ -82,3 +82,14 @@ def valid_coordinates(x,y,board):
 
   return True
 
+
+def populate_board(board):
+  """
+  choose random row and random column and put a ship there.
+  """
+  x=random_point(5)
+  y=random_point(5)
+
+  board.add_ship(x,y)
+  #board.print()
+
