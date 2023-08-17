@@ -107,13 +107,13 @@ def make_guess(board):
         if(valid_coordinates(x,y,board)):
          # print("Data is valid!")
           break
-      print(board.guess(x,y))
+      return board.guess(x,y)
           
   else:
     x=random_point(5)
     y=random_point(5)
     board.guess(x,y)
-    print(board.guess(x,y)) 
+    return board.guess(x,y)
 
     
 def play_game(computer_board,player_board):
@@ -124,21 +124,25 @@ def play_game(computer_board,player_board):
     print(f"{player_board.name}'s Board")
     player_board.print()
     #print(scores["player1"])
-    if make_guess(player_board)=="Hit":
-      scores["player1"]=scores["player1"]+1
-
-
+   
     print(f"{computer_board.name}'s Board")
     computer_board.print()
     
-
     #print(scores["computer"])
-    if make_guess(computer_board)=="Hit":
-      scores["computer"]=scores["computer"]+1
 
+    results=make_guess(computer_board)
+    print(f"{player_board.name} guessed: {computer_board.guesses[-1]}")
+    print(f"{player_board.name} : {results}")
+
+    answer=make_guess(player_board)
+    print(f"{computer_board.name} guessed: {player_board.guesses[-1]}")
+    print(f"{computer_board.name} : {answer}")
+      
+  
+    print(18*"--")
     print("After this round, the scores are:")
     print(f"{player_board.name}: {scores['player1']}. {computer_board.name}: {scores['computer']}")
-
+    print(18*"--")
 
 def new_game():
     """
