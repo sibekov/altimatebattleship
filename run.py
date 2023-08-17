@@ -114,3 +114,28 @@ def make_guess(board):
     y=random_point(5)
     board.guess(x,y)
     print(board.guess(x,y)) 
+
+    
+def play_game(computer_board,player_board):
+  """
+  playing the game
+  """
+  for i in range(5):
+    print(f"{player_board.name}'s Board")
+    player_board.print()
+    #print(scores["player1"])
+    if make_guess(player_board)=="Hit":
+      scores["player1"]=scores["player1"]+1
+
+
+    print(f"{computer_board.name}'s Board")
+    computer_board.print()
+    
+
+    #print(scores["computer"])
+    if make_guess(computer_board)=="Hit":
+      scores["computer"]=scores["computer"]+1
+
+    print("After this round, the scores are:")
+    print(f"{player_board.name}: {scores['player1']}. {computer_board.name}: {scores['computer']}")
+ 
