@@ -100,7 +100,6 @@ def populate_board(board):
   y=random_point(5)
 
   board.add_ship(x,y)
-  #board.print()
 
 def ismynumber(x):
   """
@@ -108,10 +107,11 @@ def ismynumber(x):
   """
   while True:
         try:
-            x = int(input('Enter a number.')) 
+            x = int(input('Enter your number:')) 
             return x
-        except ValueError:
-                print('Not a number')
+        except ValueError as x:
+            print(f"Sorry you have supplied:{x} please try one of the following numbers 0,1,2,3,4\n")
+        
     
 def make_guess(board):
   """
@@ -125,7 +125,6 @@ def make_guess(board):
         x=ismynumber(x)
         y=ismynumber(y)
         if(valid_coordinates(x,y,board)):
-         # print("Data is valid!")
           break
     return board.guess(x,y)
           
@@ -136,7 +135,6 @@ def make_guess(board):
     return board.guess(x,y)
 
     
-    
 def play_game(computer_board,player_board):
   """
   playing the game
@@ -144,26 +142,18 @@ def play_game(computer_board,player_board):
   for i in range(5):
     print(f"{player_board.name}'s Board")
     player_board.print()
-    #print(scores["player1"])
-   
     print(f"{computer_board.name}'s Board")
     computer_board.print()
-    
-    #print(scores["computer"])
-
     results=make_guess(computer_board)
     print(f"{player_board.name} guessed: {computer_board.guesses[-1]}")
     print(f"{player_board.name} {results}ed!!!")
     if results=="Hit":
         scores["player1"]=scores["player1"]+1
-
-
     answer=make_guess(player_board)
     print(f"{computer_board.name} guessed: {player_board.guesses[-1]}")
     print(f"{computer_board.name} {answer}ed!!!")
     if answer=="Hit":
         scores["computer"]=scores["computer"]+1
-  
     print(18*"--")
     print("After this round, the scores are:")
     print(f"{player_board.name}: {scores['player1']}. {computer_board.name}: {scores['computer']}")
@@ -194,13 +184,7 @@ def new_game():
       populate_board(player_board)
       populate_board(computer_board)
       
-      
     play_game(computer_board,player_board)
-
-
-    
-
-
 
 new_game()
 
