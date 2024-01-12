@@ -102,22 +102,32 @@ def populate_board(board):
   board.add_ship(x,y)
   #board.print()
 
-
+def ismynumber(x):
+  """
+  check if input is a number
+  """
+  while True:
+        try:
+            x = int(input('Enter a number.')) 
+            return x
+        except ValueError:
+                print('Not a number')
+    
 def make_guess(board):
   """
   if it is computer guess it choses random column and a rondom column.
   if it is a player guess then it promts the input.
   """
-  
+  x=None
+  y=None
   if board.type=="computer":
-      while True:
-        x=int(input("Please enter row :\n"))
-        y=int(input("Please enter column :\n"))
-    
+    while True:
+        x=ismynumber(x)
+        y=ismynumber(y)
         if(valid_coordinates(x,y,board)):
          # print("Data is valid!")
           break
-      return board.guess(x,y)
+    return board.guess(x,y)
           
   else:
     x=random_point(5)
@@ -125,6 +135,7 @@ def make_guess(board):
     board.guess(x,y)
     return board.guess(x,y)
 
+    
     
 def play_game(computer_board,player_board):
   """
