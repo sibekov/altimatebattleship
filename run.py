@@ -111,7 +111,7 @@ def make_guess(board):
   
   if board.type=="computer":
       while True:
-        x=int(input("Please enter column :\n"))
+        x=int(input("Please enter row :\n"))
         y=int(input("Please enter column :\n"))
     
         if(valid_coordinates(x,y,board)):
