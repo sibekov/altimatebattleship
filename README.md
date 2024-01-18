@@ -22,15 +22,18 @@
 <h2>Player Hitted Ship</h2>
 <img src="veehitted.png">
 <p>See that also when the player hit he also get advised that he hit, the coordinates are confirmed back and the scores are updated accordingly. In this case player,vee guessed the computers' ship to be hidding at row 4 and column 4 ie coordinate (4,4) wich was one of the computer's ship's hidding spot. </p>
-<h2>Input Validation and Error-checking</h2>
+<h1>Input Validation and Error-checking</h1>
+<h2>Not A Number!</h2>
 <img src="notanumber.png">
 <p>See that when a player enters something other than a number,tee, in this case, an error message is returned letting the user that what they entered is not a number, they need to enter numbers between 0 and 4. </p>
+<h2>Out of Range!</h2>
 <img src="rangeout.png">
 <p>See that when a player enters a coordinate that is outside the board,like 99 or 5 as in this case, they receive an error message letting them they are out of range, they need to puck numbers between 0 and 4.</p>
+<h2>Avoid Duplicates!</h2>
 <img src="sameguess.png">
 <p>See that when a player enters a coordinate that has already been entered, in this case (2,2), the player will get the error message that the guess was already made she or he must try again.</p>
-
-
+<h1>Data Model</h1>
+<p></p>The game has two instances of the board class to keep player's and the computer'sboard.   The Board class keeps the board size, the number of ships, the posistion of the ships, the guesses against that board, and the details of the board type may be a competer's board or the player's board and the plyer's name is kept.</p>
 
 
 
