@@ -15,9 +15,14 @@
 <p>Ships positions are randomly generated on both the computer's board and the player's board, vee's board in this example. Compare with the next board and see that the ships are indeed randomly generated as they are not placed at the sameplace if you rerun the program with the run program button. It is interesting again to note that only the player's ships are visible to the player. The Player's ships are dipicted by the @, as already discrible on how it is played above paragraph above.  The player can not see the computers's ships she or he has to gues them, that is the game</p>
 <h2>Missed Ship</h2>
 <img src="mis.png">
-<p>Once the user has entered their name, they will be asked to enter their number twice in a row, the first number will be their row and the second number will be their column. In this example the user picked 0 followed by 1 meaning he or she is guesing the computer's ship is hiddin at row 0 column1. This is shown back to the user as coordinate (0,1) additionally the player is advised that he is missed in this case.  He is also advised of the computer's shot, in this case the computer guessed the player's ship to be hidden at row 2 column 1, i.e. coordinate (2,1) which was also a miss for the computer.  The misses are marked with X as it has already been explained in how it is played.</p>
+<p>Once the user has entered their name, they will be asked to enter their number twice in a row, the first number will be their row and the second number will be their column. In this example the user picked 0 followed by 1 meaning he or she is guesing the computer's ship is hiddin at row 0 column1. This is shown back to the user as coordinate (0,1) additionally the player is advised that he is missed in this case.  He is also advised of the computer's shot, in this case the computer guessed the player's ship to be hidden at row 2 column 1, i.e. coordinate (2,1) which was also a miss for the computer. Lastly the scores after this round are shown.The misses are marked with X as it has already been explained in how it is played.</p>
+<h2>Computer Hitted Ship</h2>
+<img src="computerhit.png">
+<p>See that when player's ship is hit then the @ changes to *, this way the play can see how many ships are still alive. The massage will advise that the computer hitted and player missed and also showing coordinates and the updated score after the round. In this case the computer has 1 and vee hass 0. Since the computer correclty guessed the player's ship to be hidding in row 4 column 4 i.e. coordinate (4,4) meanwhile vee misse's as he incorrectly guessed (2,2) and none of the computer's ship are hidding there.</p>
 
-
+<h2>Player Hitted Ship</h2>
+<img src="veehitted.png">
+<p>See that also when the player hit he also get advised that he hit, the coordinates are confirmed back and the scores are updated accordingly. In this case player,vee guessed the computers' ship to be hidding at row 4 and column 4 ie coordinate (4,4) wich was one of the computer's ship's hidding spot. </p>
 
 
 
