@@ -1,16 +1,17 @@
 <h1>altimatebattleship</h1>
 
-<p>A Python programing languege game that is all about hitting the ships of your oponent while your openent is also trying to do the same thing.</p>
+<p>A Python programing languege game that is all about hitting the ships of your oponent while your openent is also trying to do the same thing,hitting your ships.</p>
 
 <h1>How is it played</h1>
 
 <p> The player need to enter their name and press enter and two boards will be randomly generated.  The player will be able to see their ships, labelled by @ sign.  The player will not be able to see the oponents ships, ie. the computer's in this case.   Guesses are marked by X for a miss and by * for a hit.  The player and  the computer will take turns in trying to locate the openents ship.  Tha one that will manage to kill all of the oponents sheep will win. otherwise the game will need to be restarted after four attempts.</p>
 
 <h1>Features</h1>
-
+<h2>Landing Page</h2>
+<img src="landingpage.png">
 <p> ships are randomly distributed on the respective boards. and the player cannot see the computer's ship.</p>
 
-<img src="/workspaces/altimatebattleship/initialized_boards.JPG">
+<img src="">
 
 <h1>Bugs<h1>
 <p>No time to figute out the error handling of a string instead of a number. Lost many days due to Mall functioning of Codes spaces infrastructure<\p>
