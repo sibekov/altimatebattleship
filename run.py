@@ -1,6 +1,6 @@
 from random import randint
 
-scores={"computer":0,"player1":0}
+scores = {"computer":0,"player1":0}
 
 class Board:
   """
@@ -168,7 +168,7 @@ def new_game():
     scores["computer"]=0
     scores["player1"]=0
     print("-"*35)
-    print("Welcome to BATTLESHIP!!!")
+    print("Welcome to ALTIMATE BATTLESHIP!!!")
     print(f"Board Size: {size}, Number of ships:{num_ships}")
     print("Top left corner is row: 0, col:0 ")
     print("-"*35)
@@ -188,6 +188,3 @@ def new_game():
 
 new_game()
 
-
-
- 
