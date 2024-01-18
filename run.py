@@ -61,7 +61,7 @@ def valid_coordinates(x,y,board):
       raise ValueError(f"Sorry you entered invalid input {x}!")
 
   except ValueError as e:
-        print(f"Invalid guess:{e},please try numbers any of the following numbers 0,1,2,3,4")
+        print(f"Invalid guess:{e},which is outside the range, please try numbers any of the following numbers 0,1,2,3,4")
         return False
 
   try:
@@ -69,7 +69,7 @@ def valid_coordinates(x,y,board):
       raise ValueError(f"Sorry you entered invalid input {y}!")
 
   except ValueError as e:
-        print(f"Invalid guess:{e},please try one of the following numbers 0,1,2,3,4\n")
+        print(f"Invalid guess:{e},which is outside the range,please try one of the following numbers 0,1,2,3,4\n")
         return False
   try:
     if((x,y) in board.guesses):
