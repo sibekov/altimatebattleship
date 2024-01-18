@@ -33,15 +33,23 @@
 <img src="sameguess.png">
 <p>See that when a player enters a coordinate that has already been entered, in this case (2,2), the player will get the error message that the guess was already made she or he must try again.</p>
 <h1>Data Model</h1>
-<p></p>The game has two instances of the board class to keep player's and the computer'sboard.   The Board class keeps the board size, the number of ships, the posistion of the ships, the guesses against that board, and the details of the board type may be a competer's board or the player's board and the plyer's name is kept.</p>
+<p>The game has two instances of the board class to keep player's and the computer'sboard.   The Board class keeps the board size, the number of ships, the posistion of the ships, the guesses against that board, and the details of the board type may be a competer's board or the player's board and the plyer's name is kept. methods in the class that help to play the game are the print menthod the add_ships and the guess</p>
+<h1>Testing<h1>
+<h2>Manual Testing<h2>
+<p>I manually tested the invlid inputs eg: out of range inputes, duplicates inputs and strings when expecting numbes. Refere to validation and Error-checking above.</p>
+<h2>PEP8 Testing<h2>
 
-
-
-
-<h1>Bugs<h1>
-<p>No time to figute out the error handling of a string instead of a number. Lost many days due to Mall functioning of Codes spaces infrastructure<\p>
-
-
+<h1>Solved Bugs<h1>
+<h2>Not A Number<h2>
+<img src="numbererror.png">
+<p>As you can see above the code used to brake whenever the player enters a string while the game is expecting a number.  This I have resolved by employing a function called ismynumber which checks first if the input is an integer returns an error message if not otherwise it returns back where it was called in the guess function. This solved the problem as you can see the results under the validation and error-checking section</p>
+<img src="continuous.png">
+<p>The other problem that can bee see from above is that the game was not continuous it would stop after the user has inputed the row and column and I had to reinitiate it each time.  I resolved this by inserting a while loop and now is continuous.  see validation and error-cheking section for results.</p>
+<img src="propername.png">
+<p>Another problem is that the user can enter a number or empty string as a name or anthing for that matter the the game would play.  See on the above snip for an example the computer is playing a person with no name.</p>
+<h1>Solved PEP8 Errors<h1>
+<img src="pepfault.png">
+<p>pep8 picked up a lot of white spaces and indentations errors which I had to fix line by line. see example of such error messages from one snip I took before resolving them above.</p>
 
 
 
