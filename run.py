@@ -110,7 +110,7 @@ def ismynumber(x):
             x = int(input('Enter your number:')) 
             return x
         except ValueError as x:
-            print(f"Sorry you have supplied:{x} please try one of the following numbers 0,1,2,3,4\n")
+            print(f"Sorry you have supplied:{x} Which is not a Number!!! please try one of the following numbers 0,1,2,3,4\n")
         
     
 def make_guess(board):
