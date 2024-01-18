@@ -19,12 +19,16 @@
 <h2>Computer Hitted Ship</h2>
 <img src="computerhit.png">
 <p>See that when player's ship is hit then the @ changes to *, this way the play can see how many ships are still alive. The massage will advise that the computer hitted and player missed and also showing coordinates and the updated score after the round. In this case the computer has 1 and vee hass 0. Since the computer correclty guessed the player's ship to be hidding in row 4 column 4 i.e. coordinate (4,4) meanwhile vee misse's as he incorrectly guessed (2,2) and none of the computer's ship are hidding there.</p>
-
 <h2>Player Hitted Ship</h2>
 <img src="veehitted.png">
 <p>See that also when the player hit he also get advised that he hit, the coordinates are confirmed back and the scores are updated accordingly. In this case player,vee guessed the computers' ship to be hidding at row 4 and column 4 ie coordinate (4,4) wich was one of the computer's ship's hidding spot. </p>
-
-
+<h2>Input Validation and Error-checking</h2>
+<img src="notanumber.png">
+<p>See that when a player enters something other than a number,tee, in this case, an error message is returned letting the user that what they entered is not a number, they need to enter numbers between 0 and 4. </p>
+<img src="rangeout.png">
+<p>See that when a player enters a coordinate that is outside the board,like 99 or 5 as in this case, they receive an error message letting them they are out of range, they need to puck numbers between 0 and 4.</p>
+<img src="sameguess.png">
+<p>See that when a player enters a coordinate that has already been entered, in this case (2,2), the player will get the error message that the guess was already made she or he must try again.</p>
 
 
 
