@@ -50,20 +50,18 @@
 <h1>Solved PEP8 Errors<h1>
 <img src="pepfault.png">
 <p>pep8 picked up a lot of white spaces and indentations errors which I had to fix line by line. see example of such error messages from one snip I took before resolving them above.</p>
-
-
-
-
-
-
-
-
-
-
 <h1>References<h1>
-
-Anna Greaves
-The code is inspired by the Love Sandwiches Code Institute walkthrough Project videos delivered by Full Stack Web developer and content creator, Anna Greaves.
-
-Matt Rudge
-The CSS code on the footer was partly taken from the battle ships game walk through project presented by Matt Rudge, Senior Product Developer at code institude.
+<h2>Anna Greaves</h2>
+<p>The code is inspired by the Love Sandwiches Code Institute walkthrough Project videos delivered by Full Stack Web developer and content creator, Anna Greaves.</p>
+<h2>Matt Rudge</h2>
+<p>The CSS code on the footer was partly taken from the battle ships game walk through project presented by Matt Rudge, Senior Product Developer at code institude.</p>
+<h2>Tutorialspoint</h2>
+<p>This site help to refresh my memory on how to declare empty string and empty list
+https://www.tutorialspoint.com/How-to-declare-a-variable-in-Python-without-assigning-a-value-to-it#:~:text=Using%20the%20None%20keyword&text=It's%20only%20necessary%20to%20use,can%20set%20it%20to%20None.</p>
+<h2>Ian Nelson on Stackoverflow.com</h2>
+<img src="givenname.png">
+<p>This side gave me an indication on how long I could make the name field for the player. 35 was convincing for me.
+https://stackoverflow.com/questions/30485/what-is-a-reasonable-length-limit-on-person-name-fields</p>
+<h2>Stackoverflow.com</h2>
+<p>This site provided information on how to code an exit function by pressing any key
+https://stackoverflow.com/questions/11876618/python-press-any-key-to-exit.</p>
