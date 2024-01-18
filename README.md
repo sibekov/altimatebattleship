@@ -9,12 +9,36 @@
 <h1>Features</h1>
 <h2>Landing Page</h2>
 <img src="landingpage.png">
-<p> ships are randomly distributed on the respective boards. and the player cannot see the computer's ship.</p>
+<p> The Orange RUN PROGRAM button is used to start or restart the game when it is finished. When pressed the user will be welcomed advised of the board size of 5 by 5 and number of ships which is kept at 4, and the fact that the top left most corner would be row 0 column 0 and then the user will be prompted to ender their name.</p>
+<h2>The Game Boards</h2>
+<img src="gameboards.png"><img src="gameboard.png">
+<p>Ships positions are randomly generated on both the computer's board and the player's board, vee's board in this example. Compare with the next board and see that the ships are indeed randomly generated as they are not placed at the sameplace if you rerun the program with the run program button. It is interesting again to note that only the player's ships are visible to the player. The Player's ships are dipicted by the @, as already discrible on how it is played above paragraph above.  The player can not see the computers's ships she or he has to gues them, that is the game</p>
+<h2>Missed Ship</h2>
+<img src="mis.png">
+<p>Once the user has entered their name, they will be asked to enter their number twice in a row, the first number will be their row and the second number will be their column. In this example the user picked 0 followed by 1 meaning he or she is guesing the computer's ship is hiddin at row 0 column1. This is shown back to the user as coordinate (0,1) additionally the player is advised that he is missed in this case.  He is also advised of the computer's shot, in this case the computer guessed the player's ship to be hidden at row 2 column 1, i.e. coordinate (2,1) which was also a miss for the computer.  The misses are marked with X as it has already been explained in how it is played.</p>
 
-<img src="">
+
+
+
+
+
+
+
+
 
 <h1>Bugs<h1>
 <p>No time to figute out the error handling of a string instead of a number. Lost many days due to Mall functioning of Codes spaces infrastructure<\p>
+
+
+
+
+
+
+
+
+
+
+
 
 <h1>References<h1>
 
