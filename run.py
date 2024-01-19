@@ -37,11 +37,12 @@ class Board:
         if self.type == "player1":
             self.board[x][y] = "@"
 
+
 def random_point(size):
     """
     Helper funtion to return a random integer between 0 and size
     """
-    return randint(0, size-1)    
+    return randint(0, size - 1)
 
 
 def valid_coordinates(x, y, board):
@@ -54,13 +55,15 @@ def valid_coordinates(x, y, board):
         if x not in listvar:
             raise ValueError(f"Sorry you entered invalid input {x}!")
     except ValueError as e:
-        print(f"Invalid guess: {e}, which is outside the range, please try any of the following numbers 0, 1, 2, 3, 4")
+        print(f"Invalid guess: {e}, which is outside the range, please try 
+              any of the following numbers 0, 1, 2, 3, 4")
         return False
     try:
         if y not in listvar:
             raise ValueError(f"Sorry you entered invalid input {y}!")
     except ValueError as e:
-        print(f"Invalid guess: {e}, which is outside the range, please try one of the following numbers 0, 1, 2, 3, 4\n")
+        print(f"Invalid guess: {e}, which is outside the range, please
+              try one of the following numbers 0, 1, 2, 3, 4\n")
         return False
     try:
         if (x, y) in board.guesses:
@@ -68,15 +71,16 @@ def valid_coordinates(x, y, board):
     except ValueError as e:
         print(f"Invalid guess:{e},please try again.\n")
         return False
-
     try:
         if type(x) is str:
             raise ValueError(f"Sorry you have supplied a string {x}!")
     except ValueError as e:
-        print(f"Invalid guess: {e}, please try one of the following numbers 0, 1, 2, 3, 4\n")
+        print(f"Invalid guess: {e}, please try one of the following
+              numbers 0, 1, 2, 3, 4\n")
         return False
     return True
-    
+
+
 def populate_board(board):
     """
     choose random row and random column and put a ship there.
@@ -92,10 +96,11 @@ def ismynumber(x):
     """
     while True:
         try:
-            x = int(input('Enter your number:')) 
+            x = int(input('Enter your number:'))
             return x
         except ValueError as x:
-            print(f"Sorry you have supplied:{x} Which is not a Whole Number !!! please try one of the following numbers 0, 1, 2, 3, 4\n")
+            print(f"Sorry you have supplied: {x} Which is not a Whole Number!
+                  please try one of the following numbers 0, 1, 2, 3, 4\n")
 
 
 def make_guess(board):
@@ -140,13 +145,14 @@ def play_game(computer_board, player_board):
             scores["computer"] = scores["computer"]+1
         print(18*"--")
         print("After this round, the scores are:")
-        print(f"{player_board.name}: {scores['player1']}. {computer_board.name}:{scores['computer']}")
+        print(f"{player_board.name}: {scores['player1']}.
+              {computer_board.name}: {scores['computer']}")
         print(18*"--")
 
-        
+
 def new_game():
     """
-    Start a new game. Sets the board size and number of ships, rests the scores 
+    Start a new game. Sets the board size and number of ships, rests the scores
     and initialises the boards.
     """
     size = 5
@@ -166,7 +172,6 @@ def new_game():
         populate_board(player_board)
         populate_board(computer_board)
     play_game(computer_board, player_board)
-    
-    
-new_game()
 
+
+new_game()

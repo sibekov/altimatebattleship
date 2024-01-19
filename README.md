@@ -38,7 +38,8 @@
 <h2>Manual Testing<h2>
 <p>I manually tested the invlid inputs eg: out of range inputes, duplicates inputs and strings when expecting numbes. Refere to validation and Error-checking above.</p>
 <h2>PEP8 Testing<h2>
-
+<img src="allclearcode.png">
+<p>resolved all the white spaces errors and fix all the indentation errors</p>
 <h1>Solved Bugs<h1>
 <h2>Not A Number<h2>
 <img src="numbererror.png">
