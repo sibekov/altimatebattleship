@@ -44,10 +44,13 @@
 <h2>Not A Number<h2>
 <img src="numbererror.png">
 <p>As you can see above the code used to brake whenever the player enters a string while the game is expecting a number.  This I have resolved by employing a function called ismynumber which checks first if the input is an integer returns an error message if not otherwise it returns back where it was called in the guess function. This solved the problem as you can see the results under the validation and error-checking section</p>
+<h2>Not Continuous<h2>
 <img src="continuous.png">
 <p>The other problem that can bee see from above is that the game was not continuous it would stop after the user has inputed the row and column and I had to reinitiate it each time.  I resolved this by inserting a while loop and now is continuous.  see validation and error-cheking section for results.</p>
+<h1>Future Resolution<h1>
+<h2>First Name<h2>
 <img src="propername.png">
-<p>Another problem is that the user can enter a number or empty string as a name or anthing for that matter the the game would play.  See on the above snip for an example the computer is playing a person with no name.</p>
+<p>Another problem is that the user can enter a number or empty string as a name or anthing for that matter the the game would play.  See on the above snip for an example the computer is playing a person with no name. I was writting the code to defend entering of empty strings and anything non alphameric using the builting isalpha() function and the built in len() method.  But unfortunatley CodeAnywhere is down again.  This will be a future implementation. </p>
 <h1>Solved PEP8 Errors<h1>
 <img src="pepfault.png">
 <p>pep8 picked up a lot of white spaces and indentations errors which I had to fix line by line. see example of such error messages from one snip I took before resolving them above.</p>
